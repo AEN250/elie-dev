@@ -113,7 +113,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer style={styles.footer}>
-        © {new Date().getFullYear()} elie-dev • Built with React
+        © {new Date().getFullYear()} elie-dev • We're here to bring your ideas to life!
       </footer>
     </div>
   );
