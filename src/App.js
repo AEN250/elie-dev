@@ -20,7 +20,7 @@ export default function App() {
       <header style={{ ...styles.hero, ...theme.hero }}>
         {/* Logo */}
         <img
-          src="/elie.png"
+          src="/elie.png.jpeg"
           alt="Elie Dev Logo"
           style={styles.logo}
         />
