@@ -18,6 +18,14 @@ export default function App() {
     <div style={{ ...styles.page, ...theme.page }}>
       {/* HEADER */}
       <header style={{ ...styles.hero, ...theme.hero }}>
+        {/* Logo */}
+        <img
+          src="/elie.png"
+          alt="Elie Dev Logo"
+          style={styles.logo}
+        />
+
+        {/* Dark/Light Mode Toggle */}
         <button
           onClick={() => setDark(!dark)}
           style={{ ...styles.toggle, ...theme.toggle }}
@@ -31,6 +39,7 @@ export default function App() {
           Full-Stack & Mobile App Developer
         </p>
 
+        {/* Contact Buttons */}
         <div style={styles.actions}>
           <a
             href={`https://wa.me/${phone}`}
@@ -59,7 +68,7 @@ export default function App() {
         </ul>
       </section>
 
-      {/* ORDER */}
+      {/* ORDER FORM */}
       <section style={styles.section}>
         <h2>🛒 Order a Service</h2>
 
@@ -104,7 +113,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer style={styles.footer}>
-        © {new Date().getFullYear()} elie-dev • We're here for your creative needs!
+        © {new Date().getFullYear()} elie-dev • Built with React
       </footer>
     </div>
   );
@@ -140,6 +149,15 @@ const styles = {
     textAlign: "center",
     color: "#fff",
     position: "relative",
+  },
+
+  logo: {
+    width: "100px",
+    height: "100px",
+    objectFit: "contain",
+    marginBottom: "1rem",
+    borderRadius: "12px",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
   },
 
   toggle: {
